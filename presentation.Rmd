@@ -1,0 +1,60 @@
+---
+title: "Workshop Reproducible Research"
+author: "Aaron"
+date: "5/29/2018"
+output: ioslides_presentation
+---
+
+## Roadmap
+
+1. Install & Setup Git (30min)
+2. My Mental Model of Reproducible Research (15-30min)
+3. Break (30min)
+4. Experimenting
+
+## Requirements
+
+1. RStudio (>1.1.4) & R (>3.4) installed
+2. rights to install thing on your computer
+3. optional: the `tidyverse` package
+4. this [presentation](https://raw.githubusercontent.com/aaronpeikert/workshop-reproducible-research/master/presentation.Rmd)
+
+
+# Install & Setup Git
+
+## Install Git
+
+1. [File Download](https://git-scm.com/downloads) or Package Manager
+   * https://git-scm.com/downloads
+   * no GUI or anything else, just git
+2. Follow the OS-specific installation process
+
+## Setup Git
+
+1. Open RStudio
+2. Click in the Console Pane on Terminal
+3. say git who you are through adapting and execute this commands
+
+    ```
+    git config --global user.name "John Doe"
+    git config --global user.email johndoe@example.com
+    ```
+
+4. Go to Tools -> Global Options -> Git/SVN -> Create RSA Key
+5. Restart your computer
+
+## Account Github
+
+1. go to [Github](https://github.com/)
+2. Create a Account
+   * with your educational E-Mail adress (e.g. john.doe@hu-berlin.de))
+   * above not necesary if you add it in step 3.
+3. Login
+4. Request the [Student Developer Pack](https://education.github.com/pack)
+
+## SSH Keys
+
+1. Open RStudio
+2. Go to Tools -> Global Options -> Git/SVN -> View public key -> Ctrl + C
+3. go to [Github](https://github.com/)
+4. Settings -> SSH and GPG keys -> New SSH key -> Ctrl + V
