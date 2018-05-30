@@ -58,7 +58,19 @@ output: ioslides_presentation
 2. Go to Tools -> Global Options -> Git/SVN -> View public key -> Ctrl + C
 3. go to [Github](https://github.com/)
 4. Settings -> SSH and GPG keys -> New SSH key -> Ctrl + V
-5. Test SSH connection with this command (in the termin in RStudio)
+5. Test SSH connection with this command (in the terminal in RStudio)
+
     ```
     ssh -T git@github.com
     ```
+
+## Clone a first Repo
+
+1. [Open](https://github.com/aaronpeikert/workshop-reproducible-research)https://github.com/aaronpeikert/workshop-reproducible-research
+2. Clone or Download
+3. **Clone with SSH** (press "Use SSH")
+4. Copy link
+5. Open RStudio
+6. File -> New Project -> Version Control -> Git 
+7. Insert Link and specify directory (can be anything)
+8. Create Project
