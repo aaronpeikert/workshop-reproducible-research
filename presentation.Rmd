@@ -58,3 +58,7 @@ output: ioslides_presentation
 2. Go to Tools -> Global Options -> Git/SVN -> View public key -> Ctrl + C
 3. go to [Github](https://github.com/)
 4. Settings -> SSH and GPG keys -> New SSH key -> Ctrl + V
+5. Test SSH connection with this command (in the termin in RStudio)
+    ```
+    ssh -T git@github.com
+    ```
