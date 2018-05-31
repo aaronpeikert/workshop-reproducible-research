@@ -4,7 +4,7 @@
 1. Install & Setup Git (30min)
 2. My Mental Model of Reproducible Research (15-30min)
 3. Break (30min)
-4. Experimenting
+4. Experimenting (1h)
 
 ## Requirements
 
