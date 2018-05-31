@@ -66,7 +66,7 @@ output: ioslides_presentation
 
 ## Clone a first Repo
 
-1. [Open](https://github.com/aaronpeikert/workshop-reproducible-research)https://github.com/aaronpeikert/workshop-reproducible-research
+1. [Open](https://github.com/aaronpeikert/workshop-reproducible-research) https://github.com/aaronpeikert/workshop-reproducible-research
 2. Clone or Download
 3. **Clone with SSH** (press "Use SSH")
 4. Copy link
