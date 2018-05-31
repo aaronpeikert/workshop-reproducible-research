@@ -25,7 +25,6 @@ output: ioslides_presentation
 ## Install Git
 
 1. [File Download](https://git-scm.com/downloads) or Package Manager
-   * https://git-scm.com/downloads
    * no GUI or anything else, just git
 2. Follow the OS-specific installation process
 
@@ -66,7 +65,7 @@ output: ioslides_presentation
 
 ## Clone a first Repo
 
-1. [Open](https://github.com/aaronpeikert/workshop-reproducible-research) https://github.com/aaronpeikert/workshop-reproducible-research
+1. [Open](https://github.com/aaronpeikert/workshop-reproducible-research)
 2. Clone or Download
 3. **Clone with SSH** (press "Use SSH")
 4. Copy link
