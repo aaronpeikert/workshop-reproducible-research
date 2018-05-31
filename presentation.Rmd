@@ -15,7 +15,7 @@ output: ioslides_presentation
 ## Requirements
 
 1. RStudio (>1.1.4) & R (>3.4) installed
-2. rights to install thing on your computer
+2. right to install things on your computer
 3. optional: the `tidyverse` package
 4. this [presentation](https://raw.githubusercontent.com/aaronpeikert/workshop-reproducible-research/master/presentation.Rmd)
 
@@ -71,6 +71,6 @@ output: ioslides_presentation
 3. **Clone with SSH** (press "Use SSH")
 4. Copy link
 5. Open RStudio
-6. File -> New Project -> Version Control -> Git 
+6. File -> New Project -> Version Control -> Git
 7. Insert Link and specify directory (can be anything)
 8. Create Project
