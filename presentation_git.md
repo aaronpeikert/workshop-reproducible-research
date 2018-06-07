@@ -17,7 +17,7 @@ output: ioslides_presentation
 1. RStudio (>1.1.4) & R (>3.4) installed
 2. right to install things on your computer
 3. optional: the `tidyverse` package
-4. this [presentation](https://raw.githubusercontent.com/aaronpeikert/workshop-reproducible-research/master/presentation.Rmd)
+4. this [presentation](https://raw.githubusercontent.com/aaronpeikert/workshop-reproducible-research/master/presentation_git.md)
 
 
 # Install & Setup Git
@@ -80,6 +80,7 @@ output: ioslides_presentation
 
 * this workshop should be fully reproducible itself, including questions & problems
 * therefore it would be great if we document them
+  * for the future you and for people not attending
 * you will learn another GitHub-Feature on the way
 
 ## Questions as GitHub Issues
