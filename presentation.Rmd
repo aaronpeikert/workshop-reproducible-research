@@ -42,9 +42,9 @@ output: ioslides_presentation
 4. Go to Tools -> Global Options -> Git/SVN -> Create RSA Key
 5. Restart your computer
 
-## Account Github
+## Account GitHub
 
-1. go to [Github](https://github.com/)
+1. go to [GitHub](https://github.com/)
 2. Create a Account
    * with your educational E-Mail adress (e.g. john.doe@hu-berlin.de))
    * above not necesary if you add it in step 3.
@@ -55,7 +55,7 @@ output: ioslides_presentation
 
 1. Open RStudio
 2. Go to Tools -> Global Options -> Git/SVN -> View public key -> Ctrl + C
-3. go to [Github](https://github.com/)
+3. go to [GitHub](https://github.com/)
 4. Settings -> SSH and GPG keys -> New SSH key -> Ctrl + V
 5. Test SSH connection with this command (in the terminal in RStudio)
 
@@ -73,3 +73,22 @@ output: ioslides_presentation
 6. File -> New Project -> Version Control -> Git
 7. Insert Link and specify directory (can be anything)
 8. Create Project
+
+# How to ask questions?
+
+## Why not "just" ask questions
+
+* this workshop should be fully reproducible itself, including questions & problems
+* therefore it would be great if we document them
+* you will learn another GitHub-Feature on the way
+
+## Questions as GitHub Issues
+
+1. go to this [GitHub-Repo](https://github.com/aaronpeikert/workshop-reproducible-research)
+2. Click on issues
+3. Create a Issue
+4. Raise you're hand
+5. ask the question
+6. Summarize the answer, as a reply to your question
+7. If you're happy with the answer close the issue
+8. If the issue is not closed in the end of the workshop, I will follow up on it and try to give a better answer
