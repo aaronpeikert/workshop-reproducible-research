@@ -39,7 +39,6 @@ output: ioslides_presentation
     git config --global user.email johndoe@example.com
     ```
 
-4. Go to Tools -> Global Options -> Git/SVN -> Create RSA Key
 5. Restart your computer
 
 ## Account GitHub
@@ -54,7 +53,8 @@ output: ioslides_presentation
 ## SSH Keys
 
 1. Open RStudio
-2. Go to Tools -> Global Options -> Git/SVN -> View public key -> Ctrl + C
+4. Go to Tools -> Global Options -> Git/SVN -> Create RSA Key
+2. Click -> View public key -> Ctrl + C
 3. go to [GitHub](https://github.com/)
 4. Settings -> SSH and GPG keys -> New SSH key -> Ctrl + V
 5. Test SSH connection with this command (in the terminal in RStudio)
