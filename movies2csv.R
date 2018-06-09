@@ -1,0 +1,5 @@
+if(!require("pacman"))install.packages("pacman")
+pacman::p_load("tidyverse", "here", "ggplot2movies")
+pacman::p_unload("pacman")
+dir.create(here("movies"), showWarnings = FALSE)
+movies %>% split(., .$year) %>% iwalk(~write_csv(.x, here("movies", paste0(.y, ".csv"))))
