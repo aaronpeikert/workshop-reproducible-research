@@ -23,3 +23,11 @@ list.files(here("movies")) %>%
 whats_here <- function(dir)here(dir, list.files(here(dir)))
 
 movies <- whats_here("movies") %>% map_dfr(read_csv, col_types = specs)
+
+whats_here <- function(dir){
+  paths <- here(dir, list.files(here(dir)))
+  names(paths) <- dir %>% here() %>% list.files() %>% str_split("\\.") %>% map_chr(1)
+  return(paths)
+}
+
+movies <- whats_here("movies") %>% map_dfr(read_csv, col_types = specs, .id = "year")
