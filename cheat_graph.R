@@ -19,7 +19,6 @@ movies %>%
 
 movies %>%
   filter(!is.na(budget), budget != 0) %>%
-  mutate(budget_log = log10(budget)) %>% 
   group_by(year) %>%
   do(lm = lm(rating ~ budget, data = .), n = NROW(.)) %>% 
   summarise(year = year,
