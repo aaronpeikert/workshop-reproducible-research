@@ -13,25 +13,29 @@ pacman::p_load("DiagrammeR")
 
 ```
 
+## Why
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result. (1992)
+
 
 ## About Philosophie
 
-* the label "Reproducible" just say that you adhere to a lose set of standarts in this communication
-* there is no real authority, which set these standarts
-* instead it is the mix of OpenSource and OpenResearch Communities, which adhere to a certan philosophie
-* even though the tools change rapidly from day to day this philosophie don't
+* the label "Reproducible" just say that you adhere to a lose set of standards in this communication
+* there is no real authority, which set these standards
+* instead it is the mix of OpenSource and OpenResearch Communities, which adhere to a certain philosophies
+* even though the tools change rapidly from day to day this philosophies don't
 
 ## Goals for Today
 
-* therefore I'll try to give you the gist of some principles following this philosophie
+* therefore I'll try to give you the gist of some principles following this philosophies
 * apart from Git(Hub) I don't intend to teach you the tools (today)
 * instead I'll give you starting points for tools which aim to make the realization of this principles
 * learning of the concepts should precedent the tooling
 
 ## Communikation is Key
 
-* Research in generall is a lot about communication, therefore ideal communication is a good mental model for reproducible research
-* you wan't to communicate something so precisly that everyone (who knows what he is doing) can reproduce it
+* Research in general is a lot about communication, therefore ideal communication is a good mental model for reproducible research
+* you want to communicate something so precisely that everyone (who knows what he is doing) can reproduce it
 
 ## Making Bread
 
@@ -39,8 +43,8 @@ pacman::p_load("DiagrammeR")
 * you don't start a recipe with:
     * Step one: You go to the Kitchen
     * Step two: You measure the kitchen to buy a oven."
-* instead you (and the person you're communcating with) expect certain things
-* the key is to exploit these assumtions/expectations to archieve efficient communication
+* instead you (and the person you're communicating with) expect certain things
+* the key is to exploit these assumptions/expectations to archive efficient communication
 * **BUT**, better be to explicit, then to assume to much
 
 # Communication with who?
@@ -133,7 +137,7 @@ digraph boxes_and_circles {
 
 ## Mapping
 
-* every empierical paper is essentially a mapping from data to an digestible output
+* every empirical paper is essentially a mapping from data to an digestible output
 
 ```{r}
 grViz("
@@ -239,11 +243,11 @@ digraph boxes_and_circles {
 * things should work regardless of the device and operating system
 * they should be well ordered
     * everything should be in one place
-    * availible via network
-* publicly availible
+    * available via network
+* publicly available
     * free
     * not bound to restrictive license agreements
-* adherance to standarts
+* adherence to standards
     * plain text
     * ISO norm
     * style guides
@@ -254,7 +258,7 @@ digraph boxes_and_circles {
 
 * this especially "easy" via programming languages
 * everything should be scripted
-* what is done to the data should be clearly, concisly and digestable communicated
+* what is done to the data should be clearly, concisely and digestible communicated
 * not only the end result, but also the steps in between
 
 ## Human & Machine
@@ -296,3 +300,59 @@ digraph boxes_and_circles {
 }
 ")
 ```
+
+# Wisdome from Software Engineering
+
+## DRY
+
+**Don't repeat yourself**
+
+> The rule: If you repat something more then three times, write a function, use apply or loop or write a script to automatise what you're doing.
+
+## KISS
+
+**Keep it simple stupid**
+
+```
+a <- 1:5
+b <- 2:6
+```
+
+```
+out <- vector("numeric", length(a))
+for(i in seq_along(a)){
+  out[i] <- a[i] + b[i]
+}
+```
+
+or
+
+```
+a+b
+```
+
+## DRTW
+
+**Don't reinvent the weel**
+
+Use wherever possible existing code, from you or from others.
+
+```
+library(someonewrotethatforyou)
+```
+
+# Additional Material
+
+## Tools I use
+
+* tidyverse
+* rprojects & here package
+* git
+* knitr
+* rmarkdown
+
+## Reference Material
+
+* Reference for the tidyverse [R for Data Science](http://r4ds.had.co.nz)
+* Git for R Pogrammer (work in progress) [Happy Git with R](http://happygitwithr.com/classroom-overview.html)
+* [much more](https://github.com/aaronpeikert/workshop-reproducible-research/blob/master/05further-reading.md) 
