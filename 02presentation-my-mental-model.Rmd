@@ -356,3 +356,8 @@ library(someonewrotethatforyou)
 * Reference for the tidyverse [R for Data Science](http://r4ds.had.co.nz)
 * Git for R Pogrammer (work in progress) [Happy Git with R](http://happygitwithr.com/classroom-overview.html)
 * [much more](https://github.com/aaronpeikert/workshop-reproducible-research/blob/master/05further-reading.md) 
+
+## For Masochists
+
+* light Version: [packrat](https://rstudio.github.io/packrat/)
+* heavy Version: [docker](https://www.rstudio.com/wp-content/uploads/2018/03/RStudio_Docker_3-9-2018.pdf)
