@@ -25,7 +25,7 @@ output: ioslides_presentation
 ## Install Git
 
 1. [File Download](https://git-scm.com/downloads) or Package Manager
-   * no GUI or anything else, just git
+    * no GUI or anything else, just git
 2. Follow the OS-specific installation process
 
 ## Setup Git

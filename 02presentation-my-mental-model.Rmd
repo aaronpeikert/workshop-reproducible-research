@@ -1,0 +1,363 @@
+---
+title: "My Mental Model"
+author: "Aaron"
+date: "5/29/2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(fig.align = "center")
+if(!require("pacman"))install.packages("pacman")
+pacman::p_load("DiagrammeR")
+
+```
+
+## Why
+
+> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result. (1992)
+
+
+## About Philosophie
+
+* the label "Reproducible" just say that you adhere to a lose set of standards in this communication
+* there is no real authority, which set these standards
+* instead it is the mix of OpenSource and OpenResearch Communities, which adhere to a certain philosophies
+* even though the tools change rapidly from day to day this philosophies don't
+
+## Goals for Today
+
+* therefore I'll try to give you the gist of some principles following this philosophies
+* apart from Git(Hub) I don't intend to teach you the tools (today)
+* instead I'll give you starting points for tools which aim to make the realization of this principles
+* learning of the concepts should precedent the tooling
+
+## Communikation is Key
+
+* Research in general is a lot about communication, therefore ideal communication is a good mental model for reproducible research
+* you want to communicate something so precisely that everyone (who knows what he is doing) can reproduce it
+
+## Making Bread
+
+* imagine you want to tell someone the recipe for making bread
+* you don't start a recipe with:
+    * Step one: You go to the Kitchen
+    * Step two: You measure the kitchen to buy a oven."
+* instead you (and the person you're communicating with) expect certain things
+* the key is to exploit these assumptions/expectations to archive efficient communication
+* **BUT**, better be to explicit, then to assume to much
+
+# Communication with who?
+
+## Other
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = circle,
+        fixedsize = true,
+        width = 0.9] // sets as circles
+  You; Other
+
+  # several 'edge' statements
+  You -> Other
+
+  subgraph {
+  rank = same; You; Other;
+  }
+}
+")
+```
+
+## Future You
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = circle,
+        fixedsize = true,
+        width = 0.9] // sets as circles
+  You; Other; 'Future \n You'
+
+  # several 'edge' statements
+  You -> Other
+  You -> 'Future \n You'
+  subgraph {
+  rank = same; You; Other;
+  }
+}
+")
+```
+
+## In all directions
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = circle,
+        fixedsize = true,
+        width = 0.9] // sets as circles
+  You; Other; 'Future \n You'
+
+  # several 'edge' statements
+  You -> Other
+  You -> 'Future \n You'
+  'Other' -> 'Future \n You'
+  'Other' -> 'Future \n Other'
+  You -> 'Future \n Other'
+  'Future \n You' -> 'Future \n Other'
+  'Future \n Other' -> 'Future \n You'
+
+  subgraph {
+  rank = same; You; Other;
+  }
+  subgraph {
+  rank = same; 'Future \n You'; 'Future \n Other';
+  }
+}
+")
+```
+
+# Principles
+
+## Mapping
+
+* every empirical paper is essentially a mapping from data to an digestible output
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+  rankdir=LR
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+  script
+
+  node [shape = circle,
+        fixedsize = true,
+        width = 0.9] // sets as circles
+  data; output;
+
+  # several 'edge' statements
+  data -> script -> output
+}
+")
+```
+
+## Two Principles
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+  rankdir=TD
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+  script
+
+  node [shape = circle,
+        fixedsize = true,
+        width = .8] // sets as circles
+  data; output;
+
+  node [shape = diamond,
+        fixedsize = true,
+        width = 1.6] // sets as circles
+  portable; transparent; 
+
+  # several 'edge' statements
+  data -> script -> output
+  data -> transparent
+  output -> portable
+
+  subgraph {
+  rank = same; data; script; output;
+  }
+}
+")
+```
+
+## Reproducibility
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+  rankdir=TD
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+  script
+
+  node [shape = circle,
+        fixedsize = true,
+        width = .8] // sets as circles
+  data; output;
+
+  node [shape = diamond,
+        fixedsize = true,
+        width = 1.6] // sets as circles
+  portable; transparent; 
+
+  # several 'edge' statements
+  data -> script -> output
+  script -> {portable; transparent}
+  data -> transparent
+  output -> portable
+
+  subgraph {
+  rank = same; data; script; output;
+  }
+}
+")
+```
+
+## Portability
+
+* things should work regardless of the device and operating system
+* they should be well ordered
+    * everything should be in one place
+    * available via network
+* publicly available
+    * free
+    * not bound to restrictive license agreements
+* adherence to standards
+    * plain text
+    * ISO norm
+    * style guides
+
+## Transparency
+
+**everthing should be documentated**
+
+* this especially "easy" via programming languages
+* everything should be scripted
+* what is done to the data should be clearly, concisely and digestible communicated
+* not only the end result, but also the steps in between
+
+## Human & Machine
+
+```{r}
+grViz("
+digraph boxes_and_circles {
+  rankdir=TD
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+  script
+
+  node [shape = circle,
+        fixedsize = true,
+        width = .8] // sets as circles
+  data; output; human; machine;
+
+  node [shape = diamond,
+        fixedsize = true,
+        width = 1.6] // sets as circles
+  portable; transparent; 
+
+  # several 'edge' statements
+  data -> script -> output
+  script -> {portable; transparent}
+  portable -> {machine; human}
+  transparent -> {machine; human}
+  data -> transparent
+  output -> portable
+
+  subgraph {
+  rank = same; data; script; output;
+  }
+}
+")
+```
+
+# Wisdome from Software Engineering
+
+## DRY
+
+**Don't repeat yourself**
+
+> The rule: If you repat something more then three times, write a function, use apply or loop or write a script to automatise what you're doing.
+
+## KISS
+
+**Keep it simple stupid**
+
+```
+a <- 1:5
+b <- 2:6
+```
+
+```
+out <- vector("numeric", length(a))
+for(i in seq_along(a)){
+  out[i] <- a[i] + b[i]
+}
+```
+
+or
+
+```
+a+b
+```
+
+## DRTW
+
+**Don't reinvent the weel**
+
+Use wherever possible existing code, from you or from others.
+
+```
+library(someonewrotethatforyou)
+```
+
+# Additional Material
+
+## Tools I use
+
+* tidyverse
+* rprojects & here package
+* git
+* knitr
+* rmarkdown
+
+## Reference Material
+
+* Reference for the tidyverse [R for Data Science](http://r4ds.had.co.nz)
+* Git for R Pogrammer (work in progress) [Happy Git with R](http://happygitwithr.com/classroom-overview.html)
+* [much more](https://github.com/aaronpeikert/workshop-reproducible-research/blob/master/05further-reading.md) 
+
+## For Masochists
+
+* light Version: [packrat](https://rstudio.github.io/packrat/)
+* heavy Version: [docker](https://www.rstudio.com/wp-content/uploads/2018/03/RStudio_Docker_3-9-2018.pdf)
