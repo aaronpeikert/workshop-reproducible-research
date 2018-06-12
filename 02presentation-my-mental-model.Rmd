@@ -359,6 +359,12 @@ Use wherever possible existing code, from you or from others.
 library(someonewrotethatforyou)
 ```
 
+## RTFM
+
+**Read The Fucking Manual**
+
+Authors of Open Source software have good intentions when they write software for you, but they also make it out of fun. Believe me, if someone writing documentation, fun is not the reason. Only pure good intention with the user is.
+
 # Additional Material
 
 ## Tools I use
