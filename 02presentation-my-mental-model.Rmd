@@ -34,10 +34,11 @@ In: Proceedings of the 62nd Annual International Meeting of the Society of Explo
 ## Goals for Today
 
 * therefore I'll try to give you the gist of some principles following this philosophies
+* **Disclaimer** this "gist" is prepared for you in my highly opinionated way, if you want a reason why I do something in that way, I'll give mostly answers I invent for the purpose of answering the question
 * apart from Git(Hub) I don't intend to teach you the tools (today)
 * instead I'll give you starting points for tools which aim to make the realization of this principles easy
 * learning of the concepts should precedent the tooling
-* Rule of Thumb: **Any Project where you work longer on then two hours, has a positive Return of Invest, so try to adhere to these standards if you think you'll need more then an hour, becouse you'll need at least two.**
+* Rule of Thumb: **Any Project where you work longer on then two hours, has a positive Return of Invest. So try to adhere to these standards if you think you'll need more then an hour, becouse you'll need at least two.**
 
 ## Communikation is Key
 
