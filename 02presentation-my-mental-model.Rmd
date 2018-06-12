@@ -15,7 +15,11 @@ pacman::p_load("DiagrammeR")
 
 ## Why
 
-> An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result. (1992)
+> *An article about computational results is advertising, not scholarship. The actual scholarship is the full software environment, code and data, that produced the result.*
+> Clearbout & Karrenbach (1992)
+
+CLAERBOUT, J. AND KARRENBACH, M. (1992). Electronic documents give reproducible research a new meaning.
+In: Proceedings of the 62nd Annual International Meeting of the Society of Exploration Geophysics, pp. 601–604
 
 
 ## About Philosophie
@@ -23,6 +27,8 @@ pacman::p_load("DiagrammeR")
 * the label "Reproducible" just say that you adhere to a lose set of standards in this communication
 * there is no real authority, which set these standards
 * instead it is the mix of OpenSource and OpenResearch Communities, which adhere to a certain philosophies
+* adhering to this philosphie cost a bit of time, there is no free lunch
+* but the payoff for you is considerable
 * even though the tools change rapidly from day to day this philosophies don't
 
 ## Goals for Today
@@ -31,6 +37,7 @@ pacman::p_load("DiagrammeR")
 * apart from Git(Hub) I don't intend to teach you the tools (today)
 * instead I'll give you starting points for tools which aim to make the realization of this principles easy
 * learning of the concepts should precedent the tooling
+* Rule of Thumb: **Any Project where you work longer on then two hours, has a positive Return of Invest, so try to adhere to these standards if you think you'll need more then an hour, becouse you'll need at least two.**
 
 ## Communikation is Key
 
