@@ -15,6 +15,17 @@ output: ioslides_presentation
 * we make a explorative data analysis via graphs
 * everyone contribute and we work as a group
 
+## Variables
+
+* title - title of the movie.
+* year - Year of release.
+* budget - Total budget (if known) in US dollars
+* length - Length in minutes.
+* rating - Average IMDB user rating.
+* votes - Number of IMDB users who rated this movie.
+* r1-10 - Multiplying by ten gives percentile (to nearest 10%) of users who rated this movie a 1.
+* mpaa - MPAA rating.
+
 ## Steps
 
 1. Creating a Project
