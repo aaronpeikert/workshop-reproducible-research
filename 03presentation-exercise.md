@@ -42,4 +42,5 @@ output: ioslides_presentation
 
 ## Future Dokumentation
 
-After the workshop this document will be extended, to cover the central problems we have experinced
+* After the workshop this document will be extended, to cover the central problems we have experinced
+* the repo we create in the workshop will be backlinked to his repo as a subtree
