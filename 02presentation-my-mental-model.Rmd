@@ -29,7 +29,7 @@ pacman::p_load("DiagrammeR")
 
 * therefore I'll try to give you the gist of some principles following this philosophies
 * apart from Git(Hub) I don't intend to teach you the tools (today)
-* instead I'll give you starting points for tools which aim to make the realization of this principles
+* instead I'll give you starting points for tools which aim to make the realization of this principles easy
 * learning of the concepts should precedent the tooling
 
 ## Communikation is Key
@@ -37,7 +37,9 @@ pacman::p_load("DiagrammeR")
 * Research in general is a lot about communication, therefore ideal communication is a good mental model for reproducible research
 * you want to communicate something so precisely that everyone (who knows what he is doing) can reproduce it
 
-## Making Bread
+# Making Bread
+
+## Expectations
 
 * imagine you want to tell someone the recipe for making bread
 * you don't start a recipe with:
@@ -46,6 +48,15 @@ pacman::p_load("DiagrammeR")
 * instead you (and the person you're communicating with) expect certain things
 * the key is to exploit these assumptions/expectations to archive efficient communication
 * **BUT**, better be to explicit, then to assume to much
+
+## Structure
+
+* All Coockbooks adhere to the same standart for a reason
+* they have an introduction, for what audience, what type of recipies -> `readme.md`
+* They start with tools, what do I need to make that -> `library` at the start of an script
+* They describe basic technics -> `functions`
+* They have common boxes where you look first if you want to cook something -> `folder structure`
+* they don't repeat themself, for example a baking book explains how to make short pastry only once and link it -> `reuse of scripts`
 
 # Communication with who?
 
