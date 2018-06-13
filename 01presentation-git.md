@@ -93,3 +93,4 @@ output: ioslides_presentation
 6. Summarize the answer, as a reply to your question
 7. If you're happy with the answer close the issue
 8. If the issue is not closed in the end of the workshop, I will follow up on it and try to give a better answer
+9. Es funktioniert!!
