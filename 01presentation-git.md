@@ -17,7 +17,7 @@ output: ioslides_presentation
 1. RStudio (>1.1.4) & R (>3.4) installed
 2. right to install things on your computer
 3. optional: the `tidyverse` package
-4. this [presentation](https://raw.githubusercontent.com/aaronpeikert/workshop-reproducible-research/master/presentation_git.md)
+4. this [presentation](https://raw.githubusercontent.com/aaronpeikert/workshop-reproducible-research/master/01presentation-git.md)
 
 
 # Install & Setup Git
