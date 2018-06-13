@@ -366,6 +366,26 @@ library(someonewrotethatforyou)
 
 Authors of Open Source software have good intentions when they write software for you, but they also make it out of fun. Believe me, if someone writing documentation, fun is not the reason. Only pure good intention with the user is.
 
+## Be consistent
+
+Even if you don't follow any advice here at least be consistent, having your own style is ok, but be consistent
+
+be consistent
+
+be consistent
+
+be consistent
+
+be consistent
+
+be consistent
+
+be consistent
+
+be consistent
+
+be consistent
+
 # Additional Material
 
 ## Tools I use
