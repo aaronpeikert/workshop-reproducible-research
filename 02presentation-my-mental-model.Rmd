@@ -404,5 +404,6 @@ be consistent
 
 ## For Masochists
 
+* very light version: [checkpoint](https://mran.microsoft.com/package/checkpoint)
 * light Version: [packrat](https://rstudio.github.io/packrat/)
 * heavy Version: [docker](https://www.rstudio.com/wp-content/uploads/2018/03/RStudio_Docker_3-9-2018.pdf)
